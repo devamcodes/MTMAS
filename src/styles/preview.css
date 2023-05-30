@@ -1,0 +1,87 @@
+/* .print-button,
+.back-button {
+	display: none;
+}
+.print-operation-buttons.hide-print {
+	display: none;
+} */
+@media print {
+	.print-operation-buttons,
+	.btn,
+	.btn-success,
+	.btn-danger {
+		display: none;
+		text-decoration: none;
+	}
+	@page {
+		/* size: 148.5mm 210mm; Set the desired dimensions */
+		size: 100px;
+		margin: 0; /* Remove default margins */
+	}
+
+	body {
+		margin: 0; /* Remove default body margin */
+	}
+}
+.container {
+	/* display: flex; */
+	justify-content: center;
+	align-items: center;
+	/* height: 100vh; */
+}
+
+.main-container {
+	max-width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.main-frame {
+	background: #ffb43c;
+	padding: 10px;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.logo {
+	width: 83px;
+	height: 45px;
+}
+
+.title {
+	font-size: 26px;
+}
+
+.date,
+.receipt {
+	font-size: 16px;
+	/* display: inline; */
+}
+
+.content {
+	font-size: 21px;
+}
+
+.amount {
+	font-size: 21px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #000;
+	padding: 5px;
+	width: fit-content;
+}
+
+.sign {
+	font-size: 21px;
+	/* float: right; */
+	/* padding-bottom: 10px; */
+	margin-left: auto;
+	text-align: right;
+}
+/* Receipt Template1 */
